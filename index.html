@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divs with Lock and Auto-click Links</title>
+    <style>
+      .container {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+      }
+
+      .div-box {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        width: 350px;
+        box-shadow: 1px 1px 1px 1px #eee;
+        border-radius: 5px;
+      }
+      .link-area {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        flex-wrap: wrap;
+      }
+
+      .link-area a {
+        text-decoration: none;
+        background: green;
+        color: white;
+        padding: 7px;
+        display: inline-block;
+        border-radius: 5px;
+      }
+
+      .disabled-links a {
+        pointer-events: none; /* Disable link clicks */
+        color: grey; /* Grey out links to show they are disabled */
+      }
+
+      .lock-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        color: red;
+      }
+      h3 {
+        margin-top: 6px;
+        font-size: 19px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 6 divs with different names -->
+      <div id="div1" class="div-box">
+        <h3>Joy</h3>
+        <div class="link-area">
+          <a href="https://link1.com" target="_blank">Ad</a><br />
+          <a href="https://link2.com" target="_blank">Ad</a><br />
+        </div>
+      </div>
+
+      <div id="div2" class="div-box disabled-links">
+        <h3>Mahim</h3>
+        <div class="link-area">
+          <a
+            href="https://terabox.com/s/1G_ER2g-KD8K_Gox12eQ1tA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1G_ER2g-KD8K_Gox12eQ1tA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1G_ER2g-KD8K_Gox12eQ1tA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1G_ER2g-KD8K_Gox12eQ1tA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1G_ER2g-KD8K_Gox12eQ1tA"
+            target="_blank"
+            >Ad</a
+          ><br />
+        </div>
+        <span class="lock-icon">🔒</span>
+      </div>
+
+      <div id="div3" class="div-box disabled-links">
+        <h3>Riju</h3>
+        <div class="link-area">
+          <a
+            href="https://terabox.com/s/1onE5iE-pxSHU4mEnQN_AJQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1onE5iE-pxSHU4mEnQN_AJQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1onE5iE-pxSHU4mEnQN_AJQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1onE5iE-pxSHU4mEnQN_AJQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1onE5iE-pxSHU4mEnQN_AJQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+        </div>
+        <span class="lock-icon">🔒</span>
+      </div>
+
+      <div id="div4" class="div-box disabled-links">
+        <h3>Kafi</h3>
+        <div class="link-area">
+          <a
+            href="https://terabox.com/s/1PBVtqYJowsOrsORuxvGtcA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1PBVtqYJowsOrsORuxvGtcA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1PBVtqYJowsOrsORuxvGtcA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1PBVtqYJowsOrsORuxvGtcA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1PBVtqYJowsOrsORuxvGtcA"
+            target="_blank"
+            >Ad</a
+          ><br />
+        </div>
+        <span class="lock-icon">🔒</span>
+      </div>
+
+      <div id="div5" class="div-box disabled-links">
+        <h3>Neha</h3>
+        <div class="link-area">
+          <a
+            href="https://terabox.com/s/1kuokGSzy1XWmR1lyRhVALQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1kuokGSzy1XWmR1lyRhVALQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1kuokGSzy1XWmR1lyRhVALQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1kuokGSzy1XWmR1lyRhVALQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1kuokGSzy1XWmR1lyRhVALQ"
+            target="_blank"
+            >Ad</a
+          ><br />
+        </div>
+        <span class="lock-icon">🔒</span>
+      </div>
+
+      <div id="div6" class="div-box disabled-links">
+        <h3>Hridoy</h3>
+        <div class="link-area">
+          <a
+            href="https://terabox.com/s/1ydDXTw45jrTGRl9BMlAKmA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1ydDXTw45jrTGRl9BMlAKmA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1ydDXTw45jrTGRl9BMlAKmA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1ydDXTw45jrTGRl9BMlAKmA"
+            target="_blank"
+            >Ad</a
+          ><br />
+          <a
+            href="https://terabox.com/s/1ydDXTw45jrTGRl9BMlAKmA"
+            target="_blank"
+            >Ad</a
+          ><br />
+        </div>
+        <span class="lock-icon">🔒</span>
+      </div>
+    </div>
+
+    <script>
+      // Function to auto-click links and unlock the next div
+      function autoClickAndChangeLinks(divId, delay) {
+        const links = document.querySelectorAll(`#${divId} a`);
+        let linkIndex = 0;
+
+        // Function to open each link
+        const openNextLink = () => {
+          if (linkIndex < links.length) {
+            // Unlock the next div before the last link of the current div is opened
+            if (linkIndex === links.length - 1) {
+              const nextDivId = `div${parseInt(divId.replace("div", "")) + 1}`;
+              const nextDiv = document.getElementById(nextDivId);
+              if (nextDiv) {
+                const lockIcon = nextDiv.querySelector(".lock-icon");
+                lockIcon.textContent = "🔓"; // Change to unlock icon
+              }
+            }
+
+            const newTab = window.open(links[linkIndex].href, "_blank"); // Open link in new tab
+            links[linkIndex].textContent = "Complete"; // Change link text to "Complete"
+            links[linkIndex].style.color = "white"; // Change link text color to green
+            links[linkIndex].style.pointerEvents = "none"; // Disable the link to prevent further clicks
+            linkIndex++;
+
+            // Close the tab after a delay
+            setTimeout(() => {
+              newTab.close();
+              openNextLink(); // Open the next link
+            }, delay);
+          } else {
+            // Once all links are processed, unlock the next div and start auto-clicking its links
+            const nextDivId = `div${parseInt(divId.replace("div", "")) + 1}`;
+            const nextDiv = document.getElementById(nextDivId);
+            if (nextDiv) {
+              setTimeout(() => {
+                nextDiv.classList.remove("disabled-links"); // Enable the next div's links
+                autoClickAndChangeLinks(nextDivId, 12000); // Start the next div after 5 seconds
+              }, 12000);
+            }
+          }
+        };
+
+        openNextLink(); // Start opening links
+      }
+
+      // Start auto-clicking from the first div with a 5-second delay
+      autoClickAndChangeLinks("div1", 12000);
+    </script>
+  </body>
+</html>
